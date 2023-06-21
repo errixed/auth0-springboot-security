@@ -2,11 +2,13 @@
 A sample code that shows how to secure springboot-backend and react/typescript-frontend application using auth0.
 this is a simplified code from [@auth0-developer-hub](https://github.com/auth0-developer-hub)
 ## Built with
-<a href="https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html">JDK<a/>: oracle openJDK v19.0.2
+[PostgreSQL](https://www.postgresql.org/): latest
 <br/>
-Spring Boot: v2.7.12
+[JDK](https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html): oracle openJDK v19.0.2
 <br/>
-React/Typescript
+[Spring Boot](https://spring.io/projects/spring-boot): v2.7.12
+<br/>
+[React](https://react.dev/): Typescript
 <br/>
 <a href="https://auth0.com">Auth0<a/>
 ## Setup June 2023
@@ -32,6 +34,8 @@ React/Typescript
 1. edit [.env](https://github.com/errixed/auth0-spring-reactTS-security/blob/main/backend/.env) file
    * AUTH0-DOMAIN: go to `Applications > Applications > your application > Domain`
    * AUTH0-AUDIENCE: go to `Applications > APIs > your server > Identifier`
+2. edit [application.properties](https://github.com/errixed/auth0-spring-reactTS-security/blob/main/backend/src/main/resources/application.properties)
+   > set Name of Database and Postgres password
 ### React setups
 1. In the [frontend](https://github.com/errixed/auth0-spring-reactTS-security/tree/main/frontend) directory, run this code on terminal:
 ```
