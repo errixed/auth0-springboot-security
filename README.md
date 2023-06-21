@@ -12,17 +12,33 @@ React/Typescript
 <a href="https://auth0.com">Auth0<a/>
 ## Setup June 2023
 ### Auth0 setups
-
+1. Create an Application
+   > To create an application, open the Applications section of Dashboard and click on the Create Application
+   * Name: `Hello World Client`
+   > You can use any name
+   * Application Type: `Single Page Web Applications`
+2. Fill out Application URIs
+   > Click on Settings tab of your Application page, and scroll until you see Application URIs
+   * Allowed Callback URLs: `http://localhost:4040/callback`
+   * Allowed Logout URLs: `http://localhost:4040`
+   * Allowed Web Origins: `http://localhost:4040`
+3. click the Save Changes
+4. Create API
+   > To create API, open the APIs section of Dashboard and Click on the Create API
+   * Name: `Name: Hello World Server`
+     > you can use any name
+   * Identifier: `https://hello-world.example.com`
+     > you can use any logical identifier
 ### Spring setups
 1. edit [.env](https://github.com/errixed/auth0-spring-reactTS-security/blob/main/backend/.env) file
-   * `AUTH0-DOMAIN: go to Applications > Applications > your application > Domain`
-   * `AUTH0-AUDIENCE: go to Applications > APIs > your server > Identifier`
+   * AUTH0-DOMAIN: go to `Applications > Applications > your application > Domain`
+   * AUTH0-AUDIENCE: go to `Applications > APIs > your server > Identifier`
 ### React setups
 1. In the [frontend](https://github.com/errixed/auth0-spring-reactTS-security/tree/main/frontend) directory, run this code on terminal:
 ```
 npm install
 ```
 2. edit [.env](https://github.com/errixed/auth0-spring-reactTS-security/blob/main/frontend/.env) file
-   * `AUTH0-DOMAIN: go to Applications > Applications > your application > Domain`
-   * `AUTH0-CLIENT-ID: go to Applications > Applications > your application > Client ID`
-   * `AUTH0-AUDIENCE: go to Applications > APIs > your server > Identifier`
+   * AUTH0-DOMAIN: go to `Applications > Applications > your application > Domain`
+   * AUTH0-CLIENT-ID: go to `Applications > Applications > your application > Client ID`
+   * AUTH0-AUDIENCE: go to `Applications > APIs > your server > Identifier`
