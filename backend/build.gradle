@@ -1,0 +1,43 @@
+plugins {
+//    id 'checkstyle'
+    id 'se.solrike.sonarlint' version '1.0.0-beta.4'
+
+    id 'java'
+    id 'org.springframework.boot' version '2.7.12'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.errixed'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:'
+    implementation 'org.postgresql:postgresql'
+    annotationProcessor('org.projectlombok:lombok')
+    annotationProcessor('org.springframework.boot:spring-boot-configuration-processor')
+    compileOnly('org.projectlombok:lombok')
+    developmentOnly('org.springframework.boot:spring-boot-devtools')
+    sonarlintPlugins('org.sonarsource.java:sonar-java-plugin:7.13.0.29990')
+
+    implementation('io.github.cdimascio:dotenv-java:2.2.4')
+    implementation('me.paulschwarz:spring-dotenv:2.4.1')
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-resource-server')
+    implementation('org.springframework.boot:spring-boot-starter-security')
+    implementation('org.springframework.boot:spring-boot-starter-web')
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    testImplementation('org.springframework.security:spring-security-test')
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
