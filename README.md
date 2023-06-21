@@ -11,12 +11,18 @@ React/Typescript
 <br/>
 <a href="https://auth0.com">Auth0<a/>
 ## Setup June 2023
+### Auth0 setups
+
+### Spring setups
+1. edit [.env](https://github.com/errixed/auth0-spring-reactTS-security/blob/main/backend/.env) file
+   * `AUTH0-DOMAIN: go to Applications > Applications > your application > Domain`
+   * `AUTH0-AUDIENCE: go to Applications > APIs > your server > Identifier`
 ### React setups
 1. In the [frontend](https://github.com/errixed/auth0-spring-reactTS-security/tree/main/frontend) directory, run this code on terminal:
 ```
 npm install
 ```
-3. edit [.env](https://github.com/errixed/auth0-spring-reactTS-security/blob/main/frontend/.env) file
+2. edit [.env](https://github.com/errixed/auth0-spring-reactTS-security/blob/main/frontend/.env) file
    * `AUTH0-DOMAIN: go to Applications > Applications > your application > Domain`
    * `AUTH0-CLIENT-ID: go to Applications > Applications > your application > Client ID`
    * `AUTH0-AUDIENCE: go to Applications > APIs > your server > Identifier`
