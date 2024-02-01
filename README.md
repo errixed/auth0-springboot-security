@@ -52,6 +52,7 @@
 ### React setups
 1. install <a href="https://nodejs.org/en">node.js</a> on your local machine
 2. In the [frontend](https://github.com/errixed/auth0-spring-reactTS-security/tree/main/frontend) directory, run this code on terminal to install package.json:
+   
 ```
 npm install
 ```
@@ -59,6 +60,7 @@ npm install
 ```
 npm start
 ```
+
 3. edit [.env](https://github.com/errixed/auth0-spring-reactTS-security/blob/main/frontend/.env) file
    * AUTH0-DOMAIN: go to `Applications > Applications > your application > Domain`
    * AUTH0-CLIENT-ID: go to `Applications > Applications > your application > Client ID`
