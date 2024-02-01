@@ -1,6 +1,19 @@
-# [![My Skills](https://skillicons.dev/icons?i=java,react)](https://skillicons.dev) auth0-spring-reactTS-security
-A sample code that shows how to secure springboot-backend and react/typescript-frontend application using auth0.
-this is a simplified code from [@auth0-developer-hub](https://github.com/auth0-developer-hub)
+<div align="center">
+   
+   [![My Skills](https://skillicons.dev/icons?i=java,react)](https://skillicons.dev)
+   # auth0-springboot-security
+   A sample code that shows how to secure springboot-backend and react/typescript-frontend application using auth0.
+   this is a simplified code from 
+   [@auth0-developer-hub](https://github.com/auth0-developer-hub)
+   <br/>
+   <br/>
+   ![GitHub followers](https://img.shields.io/github/followers/errixed)
+   ![GitHub forks](https://img.shields.io/github/forks/errixed/auth0-springboot-security)
+   ![GitHub watchers](https://img.shields.io/github/watchers/errixed/auth0-springboot-security)
+   ![GitHub Repo stars](https://img.shields.io/github/stars/errixed/auth0-springboot-security)
+   
+</div>
+
 ## Built with
 [PostgreSQL](https://www.postgresql.org/): latest
 <br/>
